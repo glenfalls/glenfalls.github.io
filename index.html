@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--========== HTML META TAGS ===========-->
-    <title>Glenfalls Rest - Nuwara-Eliya</title>
+    <title>Premium Support</title>
     <meta
       name="description"
-      content="Super Experience | Affordable Price."
+      content="Customer Satisfaction is Our Goal."
     />
 
     <!--========== FAVICON ===========-->
@@ -32,7 +32,16 @@
     <!--========== CSS ===========-->
     <link rel="preload" href="./assets/css/style.min.css" as="style" />
     <link rel="stylesheet" href="./assets/css/style.min.css" />
-    
+    <script type="text/javascript">
+        // Function to disable right-click event
+        function disableRightClick(event) {
+            // Prevent the default context menu
+            event.preventDefault();
+        }
+
+        // Add event listener for the 'contextmenu' event
+        document.addEventListener('contextmenu', disableRightClick);
+    </script>
   </head>
   <body>
     <!--========== HEADER ===========-->
@@ -42,11 +51,11 @@
           <a href="#home" class="nav_logo">
             <img
               src="./assets/svg/logo.svg"
-              width="64"
-              height="64"
-              alt="Logo"
+              width="44"
+              height="41"
+              alt="Premium Support Logo"
             />
-            GlenFalls
+            Premium Support
           </a>
         </div>
         <div class="nav_menu" id="nav-menu">
@@ -55,21 +64,23 @@
               <a href="#" class="nav_link">Home</a>
             </li>
             <li class="nav_item">
-              <a href="#About" class="nav_link">About</a>
+              <a href="/about" class="nav_link"
+                >About</a>
             </li>
             <li class="nav_item">
-              <a href="#Services" class="nav_link">Services</a>
+              <a href="/AllProducts" class="nav_link">Products</a>
             </li>
             <li class="nav_item">
-              <a href="#PlacesNearBy" class="nav_link">Places NearBy</a>
-            </li>
-             <li class="nav_item">
-              <a href="#Photos" class="nav_link">Photos</a>
+              <a href="#faqs" class="nav_link">FAQs</a>
             </li>
             <li class="nav_item">
-              <a href="#Contact" class="nav_link">Contact</a>
+              <a href="/contact" class="nav_link">Contact</a>
+            </li>
+            <li class="nav_item">
+              <a href="/FreeServices" class="nav_link">E-books</a>
             </li>
           </ul>
+
           <div class="nav_close" id="nav-close">
             <i class="bx bx-x"></i>
           </div>
@@ -89,8 +100,8 @@
       <img
         class="loading_logo"
         src="./assets/svg/logo.svg"
-        width="120"
-        height="110"
+        width="44"
+        height="41"
         alt="Logo"
       />
       <div class="loading"></div>
@@ -100,99 +111,64 @@
     <main class="main">
       <!--========== HOME ===========-->
       <section class="home" id="home">
-        <div class="home_container">
-          <div class="home_content">
-            <div class="home_data">
-              <h1 class="about_subtitle">
-                GlenFalls Rest<br/><span class="about_title-secondary"> Nuwara-Eliya</span>
-              </h1>
+        <div class="home_container bd-container bd-grid">
+          <div class="home_data">
+            <h1 class="home_title">
+              Premium <br />
+              <span class="home_title-secondary">Support</span>
+            </h1>
+            <p class="home_subtitle">
+              We facilitate the enhancement of your account to Premium or Pro versions 
+              through <span class="highlighted">exclusive coupon codes, voucher links, and invitation offers</span>.
+            </p>
+            <div class="home_buttons">
+              <a
+                href="/contact"
+                class="button"
+                >Contact Us</a
+              >
+              <a href="/AllProducts" class="button_secondary"
+                >Explore Products
+                <i class="bx bx-right-arrow-alt button_icon"></i
+              ></a>
+            </div>
+            <div class="home_company">
               <img
-                class="about_img"
-                src="./assets/img/home/controll.webp"
-                width="913"
-                height="524"
-                alt="GlenFall"
+                src="./assets/svg/home/fast.svg"
+                width="70"
+                height="18"
+                alt="Sony Logo"
               />
-              <p class="home_subtitle">
-                Have a Wonderful Luxury Holiday Experience <span class="highlighted">At an Affordable Price</span>.
-              </p>
-              <div class="home_buttons">
-                <a href="#Contact" class="button">Contact Us</a>
-                <a href="#Services" class="button_secondary">
-                  Services
-                  <i class="bx bx-right-arrow-alt button_icon"></i>
-                </a>
-              </div>
+              <img
+                src="./assets/svg/home/genuine.svg"
+                width="70"
+                height="18"
+                alt="Sony Logo"
+              />
+              <img
+                src="./assets/svg/home/hand.svg"
+                width="70"
+                height="18"
+                alt="hand"
+              />
+              <img
+                src="./assets/svg/home/right.svg"
+                width="70"
+                height="18"
+                alt="Sony Logo"
+              />
             </div>
           </div>
-        </div>
-      </section>
-      <!--========== ABOUT ===========-->
-      <section>
-        <div class="about_container bd-container bd-grid" id="About">
           <img
-            class="about_img"
-            src="./assets/img/home/controller21.webp"
-            width="413"
-            height="524"
-            alt="Controllers PlayStation"
+            src="./assets/img/home/controll.webp"
+            alt="Controller"
+            class="home_img"
           />
-          <div class="about_data">
-            <h1 class="about_title">
-              About<span class="about_title-secondary"> Us</span>
-            </h1>
-            <p class="about_subtitle">
-              We are very closed to Nuwara Eliya town and Our resort is a Perfect Getaway for those seeking tranquility, comfort, and scenic views.
-            </p>
-            <ul class="about_list">
-              <li>10 rooms with all attached bathrooms</li>
-              <li>Suitable for Families, Groups and Couples</li>
-              <li>Full or Half board plans.</li>
-              <li>Free Transportation from Nuwara Eliya</li>
-              <li>Breathtaking Views</li>
-            </ul>
-            <a href="/Payments" class="button"
-              >Get Details<i class="bx bx-right-arrow-alt about_icon"></i
-            ></a>
-          </div>
         </div>
       </section>
 
-      <!--========== SERVICES ===========-->
-      <section>
-        <div class="about_container bd-container bd-grid" id="Services">
-          <img
-            class="about_img"
-            src="./assets/img/home/controller21.webp"
-            width="413"
-            height="524"
-            alt="Controllers PlayStation"
-          />
-          <div class="about_data">
-            <h1 class="about_title">
-              Payment<span class="about_title-secondary"> Methods</span>
-            </h1>
-            <p class="about_subtitle">
-              We accept your payment in any of following catogories,
-              When your transter your may mention your name and
-              platform you want to buy as in the remark section.
-            </p>
-            <ul class="about_list">
-              <li>Online Bank transfers</li>
-              <li>Crypto Payments</li>
-              <li>UPI</li>
-              <li>Wise</li>
-              <li>Payoneer</li>
-            </ul>
-            <a href="/Payments" class="button"
-              >Shop Now <i class="bx bx-right-arrow-alt about_icon"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-
-      <!--========== PLACESNEARBY ===========-->
-      <section class="produts_container bd-container bd-grid" id="PlacesNearBy">
+      <!--========== PRODUTS ===========-->
+      <section class="produts_container bd-container bd-grid">
         <div class="produts_data">
           <h1 class="produts_title">
             Best Selling <span class="produts_title-2">Offers</span>
@@ -210,6 +186,39 @@
                 alt="Linkedin Premium"
               />
               <h2 class="produts_list-title">LinkedIn PREMIUM</h2>
+              <div class="produts_evaluation">
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <span class="produts_evaluation-title">(94)</span>
+              </div>
               <span class="produts_value">From Rs 5500 | $18</span>
               <div class="produts_buy">
                 <img
@@ -219,8 +228,291 @@
                   height="62"
                   alt="Recatangle"
                 />
+                <a class="produts_button" href="https://premiumsupport.tech/Linkedin">
+                  <i class="bx bx-plus"></i
+                ></a>
               </div>
-            </div>         
+            </div>
+            <div class="produts_list ps5_list">
+              <img
+                class="produts_img"
+                src="./assets/img/home/coursera_plus.webp"
+                width="305"
+                height="355"
+                alt="Coursera PLUS"
+              />
+              <h2 class="produts_list-title">Coursera PLUS</h2>
+              <div class="produts_evaluation">
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <span class="produts_evaluation-title">(73)</span>
+              </div>
+              <span class="produts_value">Rs 8000 | $25</span>
+              <div class="produts_buy">
+                <img
+                  class="produts_buy-img"
+                  src="./assets/svg/decoration/rectangle_secondary.svg"
+                  width="64"
+                  height="62"
+                  alt="Recatangle"
+                />
+                <a class="produts_button" href="https://premiumsupport.tech/CourseraPlus">
+                  <i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+            <div class="produts_list ps5_list">
+              <img
+                class="produts_img"
+                src="./assets/img/home/canva.webp"
+                width="226"
+                height="212"
+                alt="Joystick"
+              />
+              <h2 class="produts_list-title">Canva Pro Edu</h2>
+              <div class="produts_evaluation">
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <span class="produts_evaluation-title">(68)</span>
+              </div>
+              <span class="produts_value">Rs 1000 | $3</span>
+              <div class="produts_buy">
+                <img
+                  class="produts_buy-img"
+                  src="./assets/svg/decoration/rectangle_secondary.svg"
+                  width="64"
+                  height="62"
+                  alt="Recatangle"
+                />
+                <a class="produts_button" href="https://wa.me/94713675980">
+                  <i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+            <div class="produts_list ps5_list">
+              <img
+                class="produts_img"
+                src="./assets/img/home/github.webp"
+                width="223"
+                height="212"
+                alt="Joystick"
+              />
+              <h2 class="produts_list-title">GitHub SDP</h2>
+              <div class="produts_evaluation">
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <span class="produts_evaluation-title">(41)</span>
+              </div>
+              <span class="produts_value">Rs 9500 | $30</span>
+              <div class="produts_buy">
+                <img
+                  class="produts_buy-img"
+                  src="./assets/svg/decoration/rectangle_secondary.svg"
+                  width="64"
+                  height="62"
+                  alt="Recatangle"
+                />
+                <a class="produts_button" href="https://wa.me/94713675980">
+                  <i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+            <div class="produts_list ps5_list">
+              <img
+                class="produts_img"
+                src="./assets/img/home/autodesk.webp"
+                width="229"
+                height="215"
+                alt="Joystick"
+              />
+              <h2 class="produts_list-title">AutoDesk</h2>
+              <div class="produts_evaluation">
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <span class="produts_evaluation-title">(26)</span>
+              </div>
+              <span class="produts_value">Rs 11000 | $36</span>
+              <div class="produts_buy">
+                <img
+                  class="produts_buy-img"
+                  src="./assets/svg/decoration/rectangle_secondary.svg"
+                  width="64"
+                  height="62"
+                  alt="Recatangle"
+                />
+                <a class="produts_button" href="https://wa.me/94713675980">
+                  <i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+            <div class="produts_list ps5_list">
+              <img
+                class="produts_img"
+                src="./assets/img/home/azure.webp"
+                width="226"
+                height="212"
+                alt="Joystick"
+              />
+              <h2 class="produts_list-title">Azure Portal</h2>
+              <div class="produts_evaluation">
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <img
+                  src="./assets/img/decoration/star.webp"
+                  width="20"
+                  height="20"
+                  alt="Star"
+                />
+                <span class="produts_evaluation-title">(23)</span>
+              </div>
+              <span class="produts_value">Rs 7500 | $25</span>
+              <div class="produts_buy">
+                <img
+                  class="produts_buy-img"
+                  src="./assets/svg/decoration/rectangle_secondary.svg"
+                  width="64"
+                  height="62"
+                  alt="Recatangle"
+                />
+                <a class="produts_button" href="https://wa.me/94713675980">
+                  <i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
             <div class="home_buttons">
               <a href="/AllProducts" class="button_secondary";
                 >SEE ALL Produts
@@ -231,9 +523,9 @@
         </div>
       </section>
 
-      <!--========== PHOTOS ===========-->
+      <!--========== ABOUT ===========-->
       <section>
-        <div class="about_container bd-container bd-grid" id="Photos>
+        <div class="about_container bd-container bd-grid">
           <img
             class="about_img"
             src="./assets/img/home/controller21.webp"
@@ -380,39 +672,6 @@
           </div>
         </div>
       </section>
-
-      <!--========== CONTACT ===========-->
-      <section>
-        <div class="about_container bd-container bd-grid" id="Contact>
-          <img
-            class="about_img"
-            src="./assets/img/home/controller21.webp"
-            width="413"
-            height="524"
-            alt="Controllers PlayStation"
-          />
-          <div class="about_data">
-            <h1 class="about_title">
-              Payment<span class="about_title-secondary"> Methods</span>
-            </h1>
-            <p class="about_subtitle">
-              We accept your payment in any of following catogories,
-              When your transter your may mention your name and
-              platform you want to buy as in the remark section.
-            </p>
-            <ul class="about_list">
-              <li>Online Bank transfers</li>
-              <li>Crypto Payments</li>
-              <li>UPI</li>
-              <li>Wise</li>
-              <li>Payoneer</li>
-            </ul>
-            <a href="/Payments" class="button"
-              >Shop Now <i class="bx bx-right-arrow-alt about_icon"></i
-            ></a>
-          </div>
-        </div>
-      </section>
     </main>
     <!--========== FOOTER ===========-->
     <hr class="hr_footer" />
@@ -427,7 +686,7 @@
               height="41"
               class="footer_logo-img"
             />
-            GlenFalls Rest - NuwaraEliya
+            Premium Support
           </a>
 
           <p class="footer_description">
@@ -520,7 +779,7 @@
     </footer>
     <!-- WhatsApp -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/94717757745" target="_blank">
+        <a href="https://wa.me/94713675980" target="_blank">
             <img src="assets/svg/home/WhatsApp_icon.svg" alt="WhatsApp Icon">
         </a>
     </div>
