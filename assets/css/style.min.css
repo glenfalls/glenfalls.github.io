@@ -24,4 +24,30 @@
     border-radius: 50%; /* Makes it round */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
-  
+
+/* General styles for the grid */
+.produts_list-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .produts_list-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .produts_list-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Styles for the images within the grid */
+.produts_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
